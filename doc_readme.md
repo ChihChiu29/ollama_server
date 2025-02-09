@@ -1,3 +1,5 @@
+# Random notes
+
 ## Set 0.0.0.0
 
 From: https://www.restack.io/p/ollama-serve-answer-windows-0-0-0-0-cat-ai
