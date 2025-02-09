@@ -6,7 +6,7 @@ import ollama
 from typing import Iterable
 
 # Remember to start the server using the command line; using GUI sometimes makes the server undiscoverable on lan.
-OLLAMA_HOST = '1ocalhost:11434'
+OLLAMA_HOST = 'localhost:11434'
 
 _CACHE = {}
 
@@ -31,7 +31,7 @@ def quickchat(model: str, messages: list) -> str:
   return response['message']['content']
 
 
-def streamchat(model: str, messages: list) -> Iterable:
+def quickchat_stream(model: str, messages: list) -> Iterable:
   stream = client().chat(
     model=model,
     messages=messages,
