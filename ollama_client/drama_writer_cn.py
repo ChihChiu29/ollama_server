@@ -23,7 +23,7 @@ PROCESSED_OUTPUT_FILENAME = 'drama_processed.txt'
 
 SYSTEM_SETTING = {
   'role': 'system',
-  'content': 'you are a fairy tales writer',
+  'content': '你是一个童话作者，你擅长用中文写童话，你从来不用中文',
 }
 
 PRINT_CONTENT = True
@@ -42,7 +42,7 @@ def generate_new_story(input_prompt_filename: str, output_filename: str):
   logger.info(user_prompt)
   
   prompt = f'''
-Continue from previous story:
+根据之前的故事继续续写下去：
 
 ${user_prompt}
   '''
@@ -108,6 +108,7 @@ def process_story(drama_filename: str, drama_processed_filename: str):
       'original': line,
       'translated': result,
     })
+  
   
   with open(drama_processed_filename, 'w') as file:
     json.dump(processed, file)

@@ -1,9 +1,9 @@
-用中文写一个童话故事。故事里有两个人物：
-- 一只胖胖的卡通猫，她叫“😺小小”，有点呆呆，很可爱很萌
-- 一只大大的卡通熊，他叫“🐻大大”，他是“😺小小”的主人
-他们很恩爱
+Write a fairy tale, it has two characters:
+- A fat cartoon cat called "Cato". She is very cute.
+- A big fat bear called "Master".
+They love each other very much.
 
-任何冒险故事都可以，但是要悬念，最后以好结局收场。
-故事一定要有曲折的剧情。
+Any adventure story would be good, but aim for very interesting plot.
+It must have a good ending.
 
-只用中文，不要用英文，不要混杂英文。
+Only use English.
