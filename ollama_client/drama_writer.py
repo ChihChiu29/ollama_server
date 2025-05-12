@@ -13,7 +13,7 @@ from loguru import logger
 import fileutil
 import ollama_client
 
-MODEL = 'deepseek-r1:7b'
+MODEL = 'deepseek-r1:8b'
 # Do not write to file until this is seen.
 NO_WRITE_UNTIL = '</think>'
 
@@ -99,14 +99,8 @@ def process_story(drama_filename: str, drama_processed_filename: str):
       continue
     if line.startswith('-') or line.startswith('*'):
       continue
-    result = ollama_client.quickchat(MODEL, [
-      {'role': 'system', 'content': 'translate from Chinese to English'},
-      {'role': 'user', 'content': line},
-    ])
-    logger.info(f'${line}\n-->\n${result}')
     processed['content'].append({
       'original': line,
-      'translated': result,
     })
   
   with open(drama_processed_filename, 'w') as file:
