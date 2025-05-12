@@ -6,7 +6,8 @@ import ollama
 from typing import Iterable
 
 # Remember to start the server using the command line; using GUI sometimes makes the server undiscoverable on lan.
-OLLAMA_HOST = 'localhost:11434'
+# OLLAMA_HOST = 'localhost:11434'
+OLLAMA_HOST = '192.168.1.71:11434'
 
 _CACHE = {}
 
